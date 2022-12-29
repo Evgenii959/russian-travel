@@ -1,0 +1,47 @@
+.cover__overlay {
+  background: url(../../../sprint-3-images/__background.jpg);
+  position: relative;
+  width: 100%;
+  text-decoration: none;
+  min-height: 740px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.cover__overlay::before {
+  background: #2A2C2F;
+  opacity: .3;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s;
+}
+.cover__overlay:hover:before {
+  opacity: 0.8;
+}
+@media (max-width: 1024px) {
+  .cover__overlay {
+    min-height: 640px;
+  }
+}
+@media (max-width: 768px) {
+  .cover__overlay {
+    min-height: 480px;
+  }
+}
+@media (max-width: 500px) {
+  .cover__overlay {
+    min-height: 300px;
+  }
+}
+@media (max-width: 320px){
+  .cover__overlay {
+    min-height: 200px;
+  }
+}
